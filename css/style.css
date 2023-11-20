@@ -1,0 +1,394 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Codigo - Canal Orgamid*/
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #4F4F4F;
+  text-decoration: none;
+}
+
+#logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #53C6DB;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#menu a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    transition: 0.3s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    margin: 8px 16px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 0.5px solid #ddd;
+    border-radius: 8px;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    width: 22px;
+    border-top: 3px solid;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2.5px;
+    margin-top: 4.5px;
+    transition: 0.3s;
+    position: relative;
+    background: currentColor;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+}
+
+.subtitulo {
+  color: #4F4F4F;
+  margin: 8px 16px;
+}
+
+.img {
+  /*padding: 5px;*/
+  display: flex;
+}
+
+.img .user { 
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.icon a {
+  color: #000;
+  padding: 8px;
+}
+
+.hr {
+  margin: 16px;
+  border: 1px solid #ddd;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons .icon {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon span {
+  display: flex;
+  align-items: center;
+}
+
+.btns-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.notificacao {
+  padding: 5px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.search {
+  padding: 5px;
+  border: none;
+  color: #fff;
+  background: none;
+  font-size: 18px;
+}
+
+.notificacao:hover, .search:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/*===========*/
+
+.main {
+  margin-top: 59.5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#inputContainer {
+  padding: 10px;
+  background-color: #53C6DB;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.div-hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-search {
+  width: 70%;
+  height: 28px;
+  padding: 5px;
+  background-color: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 5px;
+  font-size: small;
+  outline: none;
+}
+
+.btn-search {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 5px;
+}
+
+.cont-lembrete {
+  padding: 10px;
+  background-image: url('../img/bg-medicamentos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #53C6DB;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.lembrete {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.local {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mostrarLembrete {
+  padding: 8px 9px;
+  color: #fff;
+  background-color: #53C6DB;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+}
+
+.mostrarLocal {
+  padding: 8px 9px;
+  color: #4F4F4F;
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+}
+
+.mostrarLembrete:hover {
+  color: #53C6DB;
+  background-color: #fff;
+}
+
+.mostrarLocal:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal-content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.modal-content p {
+  padding: 5px 10px;
+  color: #4F4F4F;
+  font-size: 16px;
+}
+
+.fechar {
+  padding: 15px;
+  color: #4F4F4F;
+  font-size: 18px;
+  border-radius: 0 5px 5px 0;
+}
+
+.avancar {
+  padding: 8.5px 10px;
+  margin-right: 5px;
+  color: #FE2E2E;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+}
+
+.fechar:hover, .avancar:hover {
+  border-left: 1px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.05);
+} 
+
+.rede:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cont-local {
+  padding: 10px;
+}
+
+.div-local {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.local-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.local-content img {
+  height: 60px;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer {
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.links {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.links a {
+  font-size: small;
+}
+
+.div-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes {
+  padding: 8px;
+  gap: 0.5rem;
+}
+
+.rede {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.app {
+  padding: 8px;
+  font-size: small;
+}

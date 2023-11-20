@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #53C6DB;
+    z-index: 1000;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    color: #4F4F4F;
+    padding: 10px 0;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.voltar .btn, .header .btn {
+    padding: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.container {
+    padding: 10px;
+}
+
+.div-fundo {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background-image: url('../img/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-frente {
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+}
+
+.img-frente img {
+    top: 40px;
+    width: 35%;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.div-plus {
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+}
+
+.div-plus div {
+    top: -113px;
+    width: 35%;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.div-nome {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: #363636;
+    font-size: larger;
+    text-align: start;
+}
+
+.div-nome2 {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 60px;
+    color: #363636;
+    font-size: larger;
+    text-align: start;
+}
+
+.btns {
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btns .btn {
+   padding: 5px 10px;
+   color: #4F4F4F;
+   background: #fff;
+   font-size: small;
+   border: 1px solid #ddd;
+   border-radius: 15px;
+}
+
+.btns .verd {
+    color: #fff;
+    background-color: #04B404;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group span {
+    color: #4F4F4F;
+    font-size: small;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}

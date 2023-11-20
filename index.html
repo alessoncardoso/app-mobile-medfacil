@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedFácil</title>
+    <link rel="shortcut icon" type="image/x-ico" href="icons/">
+    <!--arquivos externos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--arquivos internos-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="header">
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li class="perfil">
+            <a href="perfil-usuario.html">
+              <div class="icons">
+                <div class="icon">
+                  <div class="img">
+                    <img class="user" src="./img/avatar.jpg" alt=""/>
+                  </div>
+                  <span>Meu Perfil</span>
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icons">
+                <div class="icon">
+                  <i class="bi bi-universal-access-circle"></i>
+                  <span>Acessibilidade</span>
+                </div>
+                <i class="bi bi-toggle-off"></i>
+              </div>
+            </a>
+          </li>
+          <hr class="hr"></hr>
+          <li>
+            <a href="loja-medicamento.html">
+              <div class="icons">
+                <div class="icon">
+                  <i class="bi bi-bag"></i>
+                  <span>Loja</span>
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icons">
+                <div class="icon">
+                  <i class="bi bi-headset"></i>
+                  <span>Suporte</span>
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="configuracoes.html">
+              <div class="icons">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                  <span>Configurações</span>
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+          <hr class="hr"></hr>
+          <li>
+            <a href="login-usuario.html">
+              <div class="icons">
+                <div class="icon">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sair</span>
+                </div>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <a id="logo" href="index.html">MedFácil</a>
+      </div>
+      <div class="btns-icons">
+        <button class="search" id="mostrarInput" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+        <a class="notificacao" href="#">
+          <i class="bi bi-bell-fill"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hidden" id="inputContainer">
+      <div class="div-hidden">
+        <input class="input-search" type="text" id="pesquisaInput" placeholder="Pesquisar">
+        <button class="btn-search" id="executarPesquisa" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="cont-lembrete">
+      <div class="lembrete">
+        <span class="">Lembretes de Dosagem</span>
+        <button class="mostrarLembrete">
+          <i class="bi bi-arrow-repeat"></i>
+        </button>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <p>Lembre-se de tomar o medicamento 1 às 05:00 AM.</p>
+          <span class="fechar">
+            <i class="bi bi-x-circle-fill"></i>
+          </span>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <p>Lembre-se de tomar o medicamento 2 às 08:00 AM.</p>
+          <span class="fechar">
+            <i class="bi bi-x-circle-fill"></i>
+          </span>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <p>Lembre-se de tomar o medicamento 3 às 10:00 AM.</p>
+          <span class="fechar">
+            <i class="bi bi-x-circle-fill"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="cont-local">
+      <div class="local">
+        <span class="">Locais de Distribuição</span>
+        <button class="mostrarLocal">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+        <div class="div-local">
+          <div class="local-content">
+            <img class="" src="img/hospital-removebg-preview (1).png" alt=""/>
+            <span>Unidade Básica de Saúde 1</span>
+          </div>
+          <a class="avancar" href="#">
+             <i class="bi bi-geo-alt-fill"></i>
+          </a>
+        </div>
+        <div class="div-local">
+          <div class="local-content">
+            <img class="" src="img/hospital-removebg-preview (2).png" alt=""/>
+            <span>Unidade Básica de Saúde 2</span>
+          </div>
+          <a class="avancar" href="#">
+            <i class="bi bi-geo-alt-fill"></i>
+          </a>
+        </div>
+        <div class="div-local">
+          <div class="local-content">
+            <img class="" src="img/hospital-removebg-preview (3).png" alt=""/>
+            <span>Unidade Básica de Saúde 3</span>
+          </div>
+          <a class="avancar" href="#">
+            <i class="bi bi-geo-alt-fill"></i>
+          </a>
+        </div>
+        <div class="div-local">
+          <div class="local-content">
+            <img class="" src="img/hospital-removebg-preview (4).png" alt=""/>
+            <span>Unidade Básica de Saúde 4</span>
+          </div>
+          <a class="avancar" href="#">
+            <i class="bi bi-geo-alt-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class=""></div>
+      <div class=""></div>
+    </div>
+  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="links">
+      <a class="" href="">Termos</a>
+      <a class="" href="">Privacidade</a>
+      <a class="" href="">Acessibilidade</a>
+    </div>
+    <div class="div-footer">
+      <div class="redes">
+        <a class="rede" href="">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="rede" href="">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="rede" href="">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+      <div class="app">
+        <i class="bi bi-c-circle"></i>
+        <span>MedFácil</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

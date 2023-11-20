@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Médico</title>
+    <link rel="shortcut icon" type="image/x-ico" href="icons/">
+    <!--arquivos externos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--arquivos internos-->
+    <link rel="stylesheet" href="css/form-usuario.css">
+</head>
+<body>
+    <div class="container">
+        <div class="log">
+            <a href="login-usuario.html">
+                <span>Login</span>
+            </a>
+        </div>
+        <div class="form-box">
+            <div class="div-box">
+                <form class="form" role="form">
+                    <div class="title">
+                        <h2>Login Médico</h2>
+                    </div>
+                    <div class="input-box">
+                        <input class="input-field" type="text" placeholder="CPF">
+                        <label class="input-label">CPF</label>
+                    </div>
+                    <div class="input-box">
+                        <input class="input-field" type="password" placeholder="Senha">
+                        <label class="input-label">Senha</label>
+                    </div>
+                    <div class="submit">
+                        <button class="btn-submit" type="button">Entrar</button>
+                    </div>
+                </form>
+                <div class="info">
+                    <a href="recuperar-senha.html">Esqueceu a senha?</a>
+                </div>
+                <div class="info">
+                    <span>Não possui uma conta?</span>
+                    <button id="openModalBtn">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">
+                Voltar
+            </span>
+            <div class="form-box">
+                <div class="div-box">
+                    <form class="form form-med" role="form">
+                        <div class="title">
+                            <h2>Cadastre-se</h2>
+                        </div>
+                        <div class="input-box">
+                            <input class="input-field" type="text" placeholder="Nome">
+                            <label class="input-label">Nome</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="input-field" type="text" placeholder="E-mail">
+                            <label class="input-label">E-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="input-field" type="password" placeholder="Senha">
+                            <label class="input-label">Senha</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="input-field" type="password" placeholder="Confirme senha">
+                            <label class="input-label">Confirme senha</label>
+                        </div>
+                        <div class="submit">
+                            <button class="btn-submit" type="button">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/form-usuario.js"></script>
+</body>
+</html>

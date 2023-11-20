@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Medicamentos</title>
+    <link rel="shortcut icon" type="image/x-ico" href="icons/">
+    <!--arquivos externos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--arquivos internos-->
+    <link rel="stylesheet" href="css/loja-medicamento.css">
+</head>
+<body>
+    <header class="header">
+        <div class="voltar">
+            <a class="btn" href="index.html">
+                <i class="bi bi-chevron-left"></i>
+            </a>
+            <div class="titulo">
+                <span>Loja</span>
+            </div>
+        </div>
+        <button class="btn" id="openModalBtn" type="button">
+            <i class="bi bi-cart-fill"></i>
+            <span class="cont" id="cart-item-count">0</span>
+        </button>
+    </header>
+
+    <main class="main">
+        <div class="div-hidden">
+            <input class="input-search" type="text" placeholder="Pesquisar medicamento">
+            <button class="btn-search" type="button">
+            <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="subtitulo">
+                <span>Loja de Medicamentos</span>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (4).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 1</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 20.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 1', 20.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (2).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 2</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 10.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 2', 10.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (1).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 3</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 35.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 3', 35.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (8).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 4</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 50.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 4', 50.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (6).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 5</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 25.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 5', 25.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (9).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 6</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 45.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 6', 45.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (3).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 7</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 15.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 7', 15.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (7).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 8</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 40.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 8', 40.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img class="img" src="img/remedio-removebg-preview (5).png" alt="">
+                    </div>
+                    <div class="descricao">
+                        <p>Medicamento 9</p>
+                    </div>
+                    <div class="preco">
+                        <span>R$ 55.00</span>
+                        <button class="btn-plus" onclick="addToCart('Medicamento 9', 55.00)">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-header">
+                <div class="voltar">
+                    <button class="btn" id="closeModalBtn" type="button">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <div class="titulo">
+                        <span>Carrinho de Compras</span>
+                    </div>
+                </div>
+                <button class="btn" type="button">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="cart">
+                    <ul id="cart-items">
+                        <!-- Itens do carrinho serão adicionados aqui -->
+                    </ul>
+                    <div class="total">Total: R$<span id="cart-total">0.00</span></div>
+                    <button class="btn-comprar" onclick="checkout()" type="button">
+                        <span>Finalizar compra</span>
+                        <i class="bi bi-check-circle-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+          <a class="" href="">Termos</a>
+          <a class="" href="">Privacidade</a>
+          <a class="" href="">Acessibilidade</a>
+        </div>
+        <div class="div-footer">
+          <div class="redes">
+            <a class="rede" href="">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="rede" href="">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="rede" href="">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <div class="app">
+            <i class="bi bi-c-circle"></i>
+            <span>MedFácil</span>
+          </div>
+        </div>
+      </footer>
+   
+    <script src="js/loja.js"></script>
+</body>
+</html>
