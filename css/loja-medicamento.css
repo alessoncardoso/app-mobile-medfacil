@@ -239,7 +239,7 @@ main {
     width: 100%;
     bottom: 0px;
     padding: 10px;
-    position: fixed;
+    position: relative;
     border-top: 1px solid #ddd;
 }
 

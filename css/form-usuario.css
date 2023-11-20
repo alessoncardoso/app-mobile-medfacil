@@ -146,13 +146,6 @@ label,
 }
 
 /*Modal*/
-
-.form-med {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
 .modal {
     display: none;
     position: fixed;
