@@ -65,7 +65,7 @@ a {
     color: transparent;
 }
 
-.input-field:placeholder-shown ~ .input-label {
+.input-field:placeholder-shown~.input-label {
     font-size: 16px;
     cursor: text;
     color: #000;
@@ -74,7 +74,7 @@ a {
 }
 
 label,
-.input-field:focus ~ .input-label {
+.input-field:focus~.input-label {
     position: absolute;
     top: 0;
     color: #000;
@@ -84,7 +84,7 @@ label,
     transition: 0.3s;
 }
 
-.input-field:focus ~ .input-label {
+.input-field:focus~.input-label {
     color: #1E90FF;
 
 }
@@ -142,7 +142,7 @@ label,
 .divder span {
     margin: 5px;
     font-size: small;
-    color:  #363636;
+    color: #363636;
 }
 
 /*Modal*/

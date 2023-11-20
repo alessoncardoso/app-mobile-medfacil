@@ -8,8 +8,8 @@
 a {
     color: #4F4F4F;
     text-decoration: none;
-  }
- 
+}
+
 .header {
     position: fixed;
     top: 0px;
@@ -21,7 +21,6 @@ a {
     justify-content: space-between;
     background-color: #53C6DB;
 }
-
 
 .titulo {
     color: #fff;
@@ -68,7 +67,7 @@ a {
 }
 
 main {
-   margin-top: 50px;
+    margin-top: 50px;
 }
 
 .div-hidden {
@@ -77,9 +76,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  .input-search {
+}
+
+.input-search {
     width: 70%;
     height: 28px;
     padding: 5px;
@@ -88,15 +87,15 @@ main {
     border-radius: 5px;
     font-size: small;
     outline: none;
-  }
-  
-  .btn-search {
+}
+
+.btn-search {
     width: 28px;
     height: 28px;
     background-color: #fff;
     border: 0.5px solid #ddd;
     border-radius: 5px;
-  }
+}
 
 .container {
     padding: 10px;
@@ -214,7 +213,7 @@ main {
 .fechar:hover {
     border-left: 1px solid #ddd;
     background-color: rgba(0, 0, 0, 0.05);
-} 
+}
 
 .total {
     padding: 10px;
@@ -237,40 +236,37 @@ main {
 
 
 .footer {
+    width: 100%;
+    bottom: 0px;
     padding: 10px;
-    margin-top: 20px;
+    position: fixed;
     border-top: 1px solid #ddd;
-  }
-  
-  .links {
+}
+
+.links {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  .links a {
+}
+
+.links a {
     font-size: small;
-  }
-  
-  .div-footer {
+}
+
+.div-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .redes {
-    padding: 8px;
-    gap: 0.5rem;
-  }
-  
-  .rede {
+}
+
+.rede {
     padding: 8px;
     border-radius: 5px;
-  }
-  
+}
+
 .app {
     padding: 8px;
     font-size: small;
-  }
+}

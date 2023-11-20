@@ -40,7 +40,8 @@ a {
     gap: 0.5rem;
 }
 
-.voltar .btn, .header .btn {
+.voltar .btn,
+.header .btn {
     padding: 5px;
     color: #fff;
     font-size: 18px;
@@ -124,12 +125,12 @@ a {
 }
 
 .btns .btn {
-   padding: 5px 10px;
-   color: #4F4F4F;
-   background: #fff;
-   font-size: small;
-   border: 1px solid #ddd;
-   border-radius: 15px;
+    padding: 5px 10px;
+    color: #4F4F4F;
+    background: #fff;
+    font-size: small;
+    border: 1px solid #ddd;
+    border-radius: 15px;
 }
 
 .btns .verd {
