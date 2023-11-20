@@ -10,10 +10,22 @@ a {
     text-decoration: none;
 }
 
+.header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53C6DB;
+}
+
 .container {
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
+    margin-top: 50px;
     padding: 20px;
     background-color: #fff;
 }
@@ -49,15 +61,17 @@ a {
     border-radius: 5px;
 }
 
-.btn-voltar {
-    width: 100%;
-    height: 50px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.titulo {
     color: #fff;
-    background-color: #53C6DB; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .btn {
