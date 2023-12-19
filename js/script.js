@@ -57,3 +57,18 @@ mostrarInputBtn.addEventListener("click", () => {
 });
 
 
+function avancar(localId) {
+  // Simule uma condição de local indisponível (pode ser substituída por lógica real)
+  const isUnavailable = true;
+
+  const messageElement = document.getElementById(`message-${localId}`);
+  const divLocalElement = document.querySelector(`.${localId}`);
+
+  if (isUnavailable) {
+    messageElement.textContent = 'Local indisponível';
+    divLocalElement.style.border = '1px solid #e74c3c';
+  } else {
+    messageElement.textContent = ''; // Limpa a mensagem
+    divLocalElement.style.border = 'none';
+  }
+}
